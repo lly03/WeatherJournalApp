@@ -6,7 +6,7 @@ This project required me to create an asynchronous web app that uses Web API and
 
 ## Usage
 
-To use the app, it's required that nodejs is on your desktop, as this file runs express. In the file's terminal, you'll have to run 
+To use the app, you are required to have nodejs on your desktop, as this file runs express. In the file's terminal, you'll have to run 
 ```
 node server.js
 ```
