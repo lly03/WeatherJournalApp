@@ -1,0 +1,134 @@
+/*layout for mobile and tablet*/
+body{
+    background: #f23557;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin:0;
+}
+
+h1{
+   text-align: center;
+}
+
+#app{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #f0d43a;
+}
+
+div.headline{
+    text-align: center;
+}
+
+div.zip, div.entry, div.feel{
+    margin: 2vh;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+input{
+    display:block;
+    height: 1.5em;
+    width: 10em;
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button{
+    width: 10em;
+    height: 2em;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    display: block;
+}
+
+button:hover{
+    background: #3b4a6b;
+    box-shadow: inset 0 5px 5px 5px rgb(44, 42, 42);
+}
+
+textarea{
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d53aa4; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d53aa4; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d53aa4; 
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#entryHolder{
+    color: #1b2438;
+    background-color: #f34d6c;
+    padding: 1em;
+}
+
+#date{
+    float: right;
+    font-style: italic;
+}
+
+#name, #temp{
+    font-weight: bold;
+}
+
+/*style for desktop*/
+@media only screen and (min-width: 769px) {
+    #app{
+    display: grid;
+    grid-template-columns: 20vh 1fr 1fr 20vh;
+    grid-template-rows: 20vh 15vh 1fr;
+    }
+
+    div.headline{
+        grid-area: 1/2/2/4;
+        margin-bottom: 10px;
+    }
+
+    div.zip{
+        grid-area: 2/2/3/3;
+    }
+
+    div.feel{
+        grid-area: 3/2/4/3;
+    }
+
+    div.entry{
+        grid-area: 2/3/3/4;
+    }
+}
+
