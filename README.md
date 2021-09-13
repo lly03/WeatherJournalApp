@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project required me to create an asynchronous web app that uses Web API and user data to dynamically update the UI. The API that was used for this app is <a href="https://openweathermap.org/current">Link to API</a>.
+This project required me to create an asynchronous web app that uses Web API and user data to dynamically update the UI. The API that was used for this app is the <a href="https://openweathermap.org/current">Open Weather Data API</a>.
 
 ## Usage
 
