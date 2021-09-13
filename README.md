@@ -11,8 +11,13 @@ To use the app, it's required that nodejs is on your desktop, as this file runs 
 node server.js
 ```
 
-This will give you the localhost number which should be: 8000. In your browser, while the terminal is running, enter localhost:8000/index.html
+This will give you the localhost number which should be: 8000. In your browser, while the terminal is running, enter 
+```
+localhost:8000/index.html
+```
+
 It should display this:
+
 <img src="https://user-images.githubusercontent.com/86360050/133074032-9c4e7041-ba25-46b4-9551-b607f20336c9.png" alt="screenshot of the weather journal app">
 
 ## Starter Code
