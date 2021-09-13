@@ -20,6 +20,8 @@ It should display this:
 
 <img src="https://user-images.githubusercontent.com/86360050/133074032-9c4e7041-ba25-46b4-9551-b607f20336c9.png" alt="screenshot of the weather journal app">
 
+When you enter the zip code (US only) and your feelings, it should be held into the server. And when you generate another entry, the latest entry, which was the input you added previously, should display under "Most Recent Entry". 
+
 ## Starter Code
 
 I used a starter code provided by Udacity - <a href="https://github.com/udacity/fend/tree/refresh-2019" target="_blank">Link to the starter code</a>
