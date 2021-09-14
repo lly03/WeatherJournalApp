@@ -1,6 +1,6 @@
 //Set the global variables with Personal API Key for OpenWeatherMap API
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = ',us&appid=9d26a9582bd27ddd90def29c7bdd18d5';
+const apiKey = ',us&units=imperial&appid=9d26a9582bd27ddd90def29c7bdd18d5';
 
 //zip code to test = 99501
 //This function gets the API Request and returns it back to the client
@@ -42,7 +42,7 @@ const updateUI = async ()=>{
         const allData = await request.json();
         document.getElementById('date').innerHTML = `Posted on ${allData.date}`;
         document.getElementById('name').innerHTML = allData.name;
-        document.getElementById('temp').innerHTML = `${((allData.temp -273.15)*9/5+32).toFixed(2)} &#x2109;`;
+        document.getElementById('temp').innerHTML = `${allData.temp.toFixed(2)} &#x2109;`;
         if(allData.content !== ""){
             document.getElementById('content').innerHTML = allData.content;
         } else{
@@ -66,7 +66,7 @@ document.getElementById('generate').addEventListener('click', ()=>{
 
     // Create a new date instance dynamically with JS
     let d = new Date();
-    let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+    let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 
     getWeatherInfo(baseURL,newZip,apiKey).then((data) =>{
         postData("/",{
